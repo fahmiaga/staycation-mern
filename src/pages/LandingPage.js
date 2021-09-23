@@ -1,8 +1,12 @@
 import React from "react";
-import Button from "elements/Button";
+import Header from "parts/Header";
 
-function LandingPage() {
-  return <div></div>;
+function LandingPage(props) {
+  return (
+    <>
+      <Header {...props}></Header>
+    </>
+  );
 }
 
 export default LandingPage;
