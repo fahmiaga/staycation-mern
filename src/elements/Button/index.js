@@ -38,7 +38,7 @@ export default function Button(props) {
           className={classname.join(" ")}
           style={props.style}
           target={props.target === "_blank" ? "_blank" : undefined}
-          rel={props.target === "_blank" ? "noopener noreferrer" : undefined}
+          rel="noreferrer"
         >
           {props.children}
         </a>

@@ -4,6 +4,8 @@ import landingPage from "jsons/landingPage.json";
 import Hero from "parts/Hero";
 import MostPicked from "parts/MostPicked";
 import Categories from "parts/Categories";
+import Testimony from "parts/Testimony";
+import Footer from "parts/Footer";
 
 function LandingPage(props) {
   const refMostPicked = React.createRef();
@@ -14,6 +16,8 @@ function LandingPage(props) {
       <Hero refMostPicked={refMostPicked} data={landingPage.hero} />
       <MostPicked refMostPicked={refMostPicked} data={landingPage.mostPicked} />
       <Categories data={landingPage.categories} />
+      <Testimony data={landingPage.testimonial} />
+      <Footer />
     </>
   );
 }
