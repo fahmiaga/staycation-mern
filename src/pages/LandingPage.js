@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "parts/Header";
 import landingPage from "jsons/landingPage.json";
 import Hero from "parts/Hero";
@@ -10,6 +10,11 @@ import Fade from "react-reveal/Fade";
 
 function LandingPage(props) {
   const refMostPicked = React.createRef();
+
+  useEffect(() => {
+    window.title = "Staycation | Home";
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
