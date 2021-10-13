@@ -16,7 +16,11 @@ const FeaturedImage = ({ data }) => {
               <Fade bottom delay={300 * i}>
                 <div className="card h-100">
                   <figure className="img-wrapper">
-                    <img src={item.url} alt={item.id} className="img-cover" />
+                    <img
+                      src={`${process.env.REACT_APP_HOST}/${item.imageUrl}`}
+                      alt={item.id}
+                      className="img-cover"
+                    />
                   </figure>
                 </div>
               </Fade>

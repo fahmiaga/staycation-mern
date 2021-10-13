@@ -51,7 +51,7 @@ const Hero = (props) => {
                   alt={`${props.data.travelers} Travelers`}
                 />
                 <h6 className="mt-3">
-                  {numberFormat(props.data.travelers)}
+                  {numberFormat(props.data.travelers)}{" "}
                   <span className="text-gray-500 font-weight-light">
                     Travelers
                   </span>
@@ -66,7 +66,7 @@ const Hero = (props) => {
                   alt={`${props.data.treasures} treasures`}
                 />
                 <h6 className="mt-3">
-                  {numberFormat(props.data.treasures)}
+                  {numberFormat(props.data.treasures)}{" "}
                   <span className="text-gray-500 font-weight-light">
                     Treasures
                   </span>
@@ -81,7 +81,7 @@ const Hero = (props) => {
                   alt={`${props.data.cities} cities`}
                 />
                 <h6 className="mt-3">
-                  {numberFormat(props.data.cities)}
+                  {numberFormat(props.data.cities)}{" "}
                   <span className="text-gray-500 font-weight-light">
                     Cities
                   </span>

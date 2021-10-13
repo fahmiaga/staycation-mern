@@ -67,7 +67,7 @@ class BookingForm extends Component {
   startBooking = () => {
     const { data } = this.state;
     this.props.startBooking({
-      _id: this.props.itemDetails._id,
+      _id: this.props.ItemDetails._id,
       duration: data.duration,
       date: {
         startDate: data.date.startDate,
@@ -80,7 +80,7 @@ class BookingForm extends Component {
   render() {
     const { data } = this.state;
     const { ItemDetails } = this.props;
-    console.log("data =>", ItemDetails);
+    // console.log("data =>", ItemDetails);
     return (
       <div className="card bordered" style={{ padding: "60px 80px" }}>
         <h4 className="mb-3">Start Booking</h4>
